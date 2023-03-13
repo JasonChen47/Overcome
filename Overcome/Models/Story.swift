@@ -13,11 +13,11 @@ struct Story: Identifiable {
     let id: UUID
     var issue: String
     var title: String
-    var image: UIImage
+    var image: Image
     var story: String
     var user: String
     
-    init(id: UUID = UUID(), issue: String, title: String, image: UIImage, story: String, user: String) {
+    init(id: UUID = UUID(), issue: String, title: String, image: Image, story: String, user: String) {
         self.id = id
         self.issue = issue
         self.title = title
@@ -30,6 +30,17 @@ struct Story: Identifiable {
 extension Story {
     static let sampleData: [Story] =
     [
-        Story(issue: "Depression", title: "Overcoming by Helping Others", image: UIImage(named: "Dog")!, story: "I started getting more involved in the community", user: "John")
+        Story(issue: "Depression", title: "Overcoming by Helping Others", image: Image("Dog"), story: "I started getting more involved in the community", user: "John"),
+        Story(issue: "Addiction", title: "Exercising: A Natural Medicine", image: Image("Sunset"), story: "I joined a local support group", user: "Teemo"),
+        Story(issue: "Anxiety", title: "Self Love", image: Image("Paint"), story: "I learned to love myself and created a vision for my future", user: "Sarah"),
+        Story(issue: "Depression", title: "Overcoming by Helping Others", image: Image("Dog"), story: "I started getting more involved in the community", user: "John"),
+        Story(issue: "Addiction", title: "Exercising: A Natural Medicine", image: Image("Sunset"), story: "I joined a local support group", user: "Teemo"),
+        Story(issue: "Anxiety", title: "Self Love", image: Image("Paint"), story: "I learned to love myself and created a vision for my future", user: "Sarah"),
+        Story(issue: "Depression", title: "Overcoming by Helping Others", image: Image("Dog"), story: "I started getting more involved in the community", user: "John"),
+        Story(issue: "Addiction", title: "Exercising: A Natural Medicine", image: Image("Sunset"), story: "I joined a local support group", user: "Teemo"),
+        Story(issue: "Anxiety", title: "Self Love", image: Image("Paint"), story: "I learned to love myself and created a vision for my future", user: "Sarah"),
+        Story(issue: "Depression", title: "Overcoming by Helping Others", image: Image("Dog"), story: "I started getting more involved in the community", user: "John"),
+        Story(issue: "Addiction", title: "Exercising: A Natural Medicine", image: Image("Sunset"), story: "I joined a local support group", user: "Teemo"),
+        Story(issue: "Anxiety", title: "Self Love", image: Image("Paint"), story: "I learned to love myself and created a vision for my future", user: "Sarah")
     ]
 }
