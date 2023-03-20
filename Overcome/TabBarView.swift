@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            HomeView()
+            TestView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }

@@ -19,6 +19,7 @@
 		F65746C429BAC68F0044B6EA /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65746C329BAC68F0044B6EA /* TabBarView.swift */; };
 		F65746C629BAC7A70044B6EA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65746C529BAC7A70044B6EA /* ProfileView.swift */; };
 		F65746C829BAC7D70044B6EA /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65746C729BAC7D70044B6EA /* SearchView.swift */; };
+		F677D5CE29C7DE7D00FE882D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F677D5CD29C7DE7D00FE882D /* TestView.swift */; };
 		F67AFE2929BEAEC9004ED893 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67AFE2829BEAEC9004ED893 /* HomeView.swift */; };
 		F67AFE2B29BEB0EA004ED893 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67AFE2A29BEB0EA004ED893 /* Story.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		F65746C329BAC68F0044B6EA /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F65746C529BAC7A70044B6EA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F65746C729BAC7D70044B6EA /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F677D5CD29C7DE7D00FE882D /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		F67AFE2829BEAEC9004ED893 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F67AFE2A29BEB0EA004ED893 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				F657469629BAC3D70044B6EA /* ContentView.swift */,
 				F65746C329BAC68F0044B6EA /* TabBarView.swift */,
 				F67AFE2829BEAEC9004ED893 /* HomeView.swift */,
+				F677D5CD29C7DE7D00FE882D /* TestView.swift */,
 				F65746C729BAC7D70044B6EA /* SearchView.swift */,
 				F65746C529BAC7A70044B6EA /* ProfileView.swift */,
 				F657469829BAC3DC0044B6EA /* Assets.xcassets */,
@@ -292,6 +295,7 @@
 				F65746C829BAC7D70044B6EA /* SearchView.swift in Sources */,
 				F65746C429BAC68F0044B6EA /* TabBarView.swift in Sources */,
 				F67AFE2929BEAEC9004ED893 /* HomeView.swift in Sources */,
+				F677D5CE29C7DE7D00FE882D /* TestView.swift in Sources */,
 				F65746C629BAC7A70044B6EA /* ProfileView.swift in Sources */,
 				F657469529BAC3D70044B6EA /* OvercomeApp.swift in Sources */,
 				F67AFE2B29BEB0EA004ED893 /* Story.swift in Sources */,

@@ -16,6 +16,7 @@ struct HomeView: View {
     var body: some View {
         // A ZStack is provided if you need to add a background
         ZStack {
+            
             // Main content
             VStack {
                 // Overcome title
@@ -30,25 +31,45 @@ struct HomeView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(data) { datum in
-                            Color.white
-                                .aspectRatio(1.618, contentMode: .fill)
-                                .overlay(
-                                    ZStack {
-                                        datum.image
-                                            .resizable()
-                                            .scaledToFill()
-                                        VStack {
-                                            HStack {
-                                                Text(datum.issue)
-                                                    .padding()
-                                                    .background(Color.white)
-                                            }
+                            VStack {
+                                HStack {
+                                    Text(datum.title)
+                                        .bold()
+                                    Spacer()
+                                }
+                                HStack {
+                                    Text(datum.user)
+                                    Spacer()
+                                }
+                                ZStack {
+                                    Color.white
+                                        .aspectRatio(1.618, contentMode: .fill)
+                                        .overlay(
+                                            datum.image
+                                                .resizable()
+                                                .scaledToFill()
+                                        )
+                                        .clipped()
+                                        .cornerRadius(5)
+                                    VStack {
+                                        Spacer()
+                                        HStack {
+                                            
+                                            Text(datum.issue)
+                                                .foregroundColor(.white)
+                                                .padding()
+                                                .background(.black)
+                                                .cornerRadius(5)
+                                            Spacer()
+//                                            Text(author)
+//                                                .foregroundColor(.white)
+//                                                .padding()
+//                                                .background(.black)
+//                                                .cornerRadius(5)
                                         }
-                                        
                                     }
-                                )
-                                .clipped()
-                                .cornerRadius(5)
+                                }
+                            }
                         }
                     }
                 }
